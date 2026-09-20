@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GéoAxe — Contactez-moi pour un devis ou un renseignement</title>
+  <meta name="description" content="Contactez GéoAxe, géomètre-topographe indépendant : devis gratuit sous 24 heures pour vos levés topographiques, implantations, relevés de bâtiment, récolement de réseaux et contrôles de chantier.">
+  <meta name="author" content="GéoAxe">
+  <meta name="theme-color" content="#0a1e36">
+
+  <!-- Partage sur les réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GéoAxe">
+  <meta property="og:title" content="GéoAxe — Contactez-moi pour un devis ou un renseignement">
+  <meta property="og:description" content="Contactez GéoAxe, géomètre-topographe indépendant : devis gratuit sous 24 heures pour vos levés topographiques, implantations, relevés de bâtiment, récolement de réseaux et contrôles de chantier.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:locale" content="fr_FR">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/icons.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<!-- ============ BARRE DE CONTACT ============ -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg> Intervention dans toute la France</span>
+    <ul class="topbar-list">
+      <li><a href="tel:+33748337041"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> 07 48 33 70 41</a></li>
+      <li><a href="mailto:geoaxe2@gmail.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg> geoaxe2@gmail.com</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ EN-TÊTE ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="GéoAxe — accueil">
+      <!-- Déposez votre logo dans assets/images/logo-geoaxe.png (ou .svg).
+           Tant que le fichier n'existe pas, le logo vectoriel de secours s'affiche. -->
+      <img class="logo-img" src="assets/images/logo-geoaxe.png" alt="GéoAxe" width="303" height="156">
+      <span class="logo-baseline">Géomètre-topographe</span>
+      <span class="logo-fallback">
+        <svg class="logo-mark" aria-hidden="true"><use href="#icon-logo"></use></svg>
+        <span class="logo-text">
+          <span class="logo-name">Géo<span>Axe</span></span>
+          <span class="logo-title">Géomètre-topographe</span>
+        </span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="domaines-activite.html">Domaines d'activité</a>
+        <a href="savoir-faire.html">Savoir-faire</a>
+        <a href="references.html">Références</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ BANDEAU DE PAGE ============ -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <span aria-hidden="true">›</span>
+      <span>Contact</span>
+    </nav>
+    <h1>Parlons de votre projet</h1>
+    <p class="lead">Décrivez-moi votre besoin en quelques lignes : vous recevez un devis clair et gratuit sous 24 heures ouvrées, avec le périmètre de mission, les livrables et le délai.</p>
+    
+  </div>
+</section>
+
+<!-- ============ FORMULAIRE + COORDONNÉES ============ -->
+<section class="section">
+  <div class="container contact-layout">
+
+    <!-- ---------- Formulaire ---------- -->
+    <div class="form-card reveal">
+      <h2 style="font-size:1.5rem">Demander un devis</h2>
+      <p class="lead" style="font-size:.97rem;margin-bottom:26px">
+        Les champs marqués d'un <span style="color:var(--accent-dark)">*</span> sont obligatoires.
+      </p>
+
+      <!--
+        Formulaire relié à Formspree (compte geoaxe2@gmail.com).
+        L'envoi se fait en arrière-plan : le visiteur reste sur la page et
+        voit un message de confirmation. Voir js/script.js § 8.
+      -->
+      <form action="https://formspree.io/f/mgavaoba" method="POST"
+            data-contact-form data-fallback-email="geoaxe2@gmail.com" novalidate>
+
+        <div class="form-status" role="status" aria-live="polite"></div>
+
+        <!-- Objet de l'e-mail reçu -->
+        <input type="hidden" name="_subject" value="Demande de devis — site GéoAxe">
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="prenom">Prénom <span class="req">*</span></label>
+            <input type="text" id="prenom" name="Prénom" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="nom">Nom <span class="req">*</span></label>
+            <input type="text" id="nom" name="Nom" autocomplete="family-name" required>
+          </div>
+          <div class="field">
+            <label for="societe">Société</label>
+            <input type="text" id="societe" name="Société" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="telephone">Téléphone <span class="req">*</span></label>
+            <input type="tel" id="telephone" name="Téléphone" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="email">E-mail <span class="req">*</span></label>
+            <input type="email" id="email" name="E-mail" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="lieu">Lieu d'intervention <span class="req">*</span></label>
+            <input type="text" id="lieu" name="Lieu d'intervention" placeholder="Commune ou département" required>
+          </div>
+
+          <div class="field is-full">
+            <label for="prestation">Type de prestation</label>
+            <select id="prestation" name="Prestation">
+              <option value="">Je ne sais pas encore / autre</option>
+              <option>Topographie — levé de terrain</option>
+              <option>Bâtiment et patrimoine — relevé d'existant</option>
+              <option>Travaux publics et infrastructures</option>
+              <option>VRD et réseaux — récolement</option>
+              <option>Contrôle de chantier et industrie</option>
+              <option>Géomatique et données SIG</option>
+              <option>Renfort d'équipe / mission en régie</option>
+            </select>
+          </div>
+
+          <div class="field is-full">
+            <label for="source">Comment m'avez-vous connu&nbsp;?</label>
+            <select id="source" name="Origine du contact">
+              <option value="">— Choisissez —</option>
+              <option>Recherche internet</option>
+              <option>Bouche à oreille</option>
+              <option>Réseaux sociaux</option>
+              <option>Newsletter</option>
+              <option>Déjà client</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div class="field is-full">
+            <label for="message">Votre besoin <span class="req">*</span></label>
+            <textarea id="message" name="Message" required
+              placeholder="Décrivez le site, la surface concernée, les livrables attendus et votre délai souhaité."></textarea>
+            <span class="hint">Plus votre description est précise, plus le devis sera juste dès le premier envoi.</span>
+          </div>
+
+          <div class="field is-full">
+            <label class="checkbox">
+              <input type="checkbox" name="rgpd" required>
+              <span>
+                J'accepte que les informations saisies soient utilisées pour répondre à ma demande.
+                Elles ne sont jamais cédées à des tiers.
+                <a href="confidentialite.html">Politique de confidentialité</a>. <span class="req">*</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Piège à robots : laissé vide par les humains -->
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"
+               style="position:absolute;left:-9999px" aria-hidden="true">
+
+        <p style="margin-top:26px">
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Envoyer ma demande</button>
+        </p>
+      </form>
+    </div>
+
+    <!-- ---------- Coordonnées ---------- -->
+    <div class="reveal reveal-delay-1">
+      <div class="contact-info">
+        <div class="contact-tile">
+          <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+          <div>
+            <h3>Téléphone</h3>
+            <p><a href="tel:+33748337041">07 48 33 70 41</a></p>
+            <p style="font-size:.86rem;margin-top:4px">Du lundi au vendredi, 8h — 19h</p>
+          </div>
+        </div>
+        <div class="contact-tile">
+          <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+          <div>
+            <h3>E-mail</h3>
+            <p><a href="mailto:geoaxe2@gmail.com">geoaxe2@gmail.com</a></p>
+            <p style="font-size:.86rem;margin-top:4px">Réponse sous 24&nbsp;h ouvrées</p>
+          </div>
+        </div>
+        <div class="contact-tile">
+          <svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>
+          <div>
+            <h3>Zone d'intervention</h3>
+            <p>Toute la France métropolitaine</p>
+            <p style="font-size:.86rem;margin-top:4px">Frais de déplacement indiqués dans le devis</p>
+          </div>
+        </div>
+        <div class="contact-tile">
+          <svg class="icon" aria-hidden="true"><use href="#icon-file"></use></svg>
+          <div>
+            <h3>Entreprise</h3>
+            <p>GéoAxe — entrepreneur individuel</p>
+            <p style="font-size:.86rem;margin-top:4px">Sevran (93) — Seine-Saint-Denis</p>
+            <p style="font-size:.86rem">SIRET 130 058 670 00014 — APE 7112A</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="notice" style="margin-top:24px">
+        <svg class="icon" aria-hidden="true"><use href="#icon-alert"></use></svg>
+        <div>
+          <h3>Besoin d'un bornage&nbsp;?</h3>
+          <p>
+            Les opérations qui fixent juridiquement les limites de propriété relèvent
+            du géomètre-expert inscrit à l'Ordre. Dites-le-moi : je vous oriente
+            vers le bon interlocuteur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-surface">
+  <div class="container container-narrow">
+    <div class="section-head is-centered">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2>Délais, livrables et conditions d'intervention</h2>
+    </div>
+    <div class="faq">
+        <div class="faq-item is-open">
+          <button class="faq-trigger" type="button">
+            Sous quel délai puis-je recevoir un devis&nbsp;?
+            <svg class="icon chevron" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="faq-panel">
+            <div><p>Vous recevez une réponse sous 24 heures ouvrées. Pour une mission simple et bien décrite, le devis chiffré part dans le même délai ; pour un projet plus complexe, je vous appelle d'abord pour cadrer le besoin.</p></div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            Dans quelles régions intervenez-vous&nbsp;?
+            <svg class="icon chevron" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="faq-panel">
+            <div><p>Dans toute la France métropolitaine. Les frais de déplacement sont annoncés dans le devis, avant toute intervention. Pour les missions éloignées, je regroupe autant que possible les interventions sur plusieurs jours.</p></div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            Quels formats de livrables proposez-vous&nbsp;?
+            <svg class="icon chevron" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="faq-panel">
+            <div><p>Les plus courants sont DWG, DXF, PDF, LandXML, CSV, E57, SHP et GPKG. Indiquez-moi les formats attendus par votre bureau d'études ou votre maître d'œuvre : ils sont fixés dans le devis.</p></div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            Réalisez-vous des bornages&nbsp;?
+            <svg class="icon chevron" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="faq-panel">
+            <div><p>Non. Le bornage et les actes qui fixent juridiquement les limites de propriété sont réservés aux géomètres-experts inscrits à l'Ordre. GéoAxe réalise les prestations techniques : relevé, représentation, implantation, contrôle et récolement.</p></div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            Peut-on faire appel à vous en renfort ponctuel&nbsp;?
+            <svg class="icon chevron" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="faq-panel">
+            <div><p>Oui. J'interviens régulièrement en renfort d'équipe pour des bureaux d'études et des entreprises de travaux publics, à la journée, à la semaine ou au forfait, sur le terrain comme au bureau.</p></div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" type="button">
+            Comment se déroule une première intervention&nbsp;?
+            <svg class="icon chevron" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+          </button>
+          <div class="faq-panel">
+            <div><p>Après validation du devis, nous convenons d'une date et des accès au site. J'interviens avec mon matériel, je rattache le levé à un système de référence, puis je vous remets les livrables contrôlés dans le délai annoncé.</p></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<!-- Même endpoint Formspree que le formulaire de contact : le champ caché
+     _subject permet de distinguer les deux types de messages dans la boîte mail. -->
+<section class="section-sm">
+  <div class="container container-narrow">
+    <div class="form-card reveal" style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Newsletter</span>
+      <h2 style="font-size:1.4rem">Recevoir les nouveautés de GéoAxe</h2>
+      <p class="lead" style="font-size:.96rem;max-width:52ch;margin:0 auto 24px">
+        Quelques e-mails par an : nouvelles prestations, retours de chantier et
+        rappels réglementaires utiles. Désinscription en un clic.
+      </p>
+      <form action="https://formspree.io/f/mgavaoba" method="POST"
+            data-contact-form data-fallback-email="geoaxe2@gmail.com" class="newsletter-form" novalidate>
+        <div class="form-status" role="status" aria-live="polite" style="flex:1 1 100%"></div>
+        <input type="hidden" name="_subject" value="Inscription newsletter — site GéoAxe">
+        <label class="visually-hidden" for="news-email">Votre adresse e-mail</label>
+        <input type="email" id="news-email" name="E-mail" placeholder="votre@email.fr" required>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"
+               style="position:absolute;left:-9999px" aria-hidden="true">
+        <button type="submit" class="btn btn-primary">S'inscrire</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-logo">
+        <a href="index.html" class="logo" aria-label="GéoAxe — accueil">
+          <img class="logo-img" src="assets/images/logo-geoaxe-blanc.png" alt="GéoAxe — géomètre-topographe" width="296" height="170">
+          <span class="logo-fallback">
+            <svg class="logo-mark" aria-hidden="true"><use href="#icon-logo"></use></svg>
+            <span class="logo-text">
+              <span class="logo-name">GéoAxe</span>
+              <span class="logo-title">Géomètre-topographe</span>
+            </span>
+          </span>
+        </a>
+        <p class="footer-about">
+          Mesurer avec précision, produire des données fiables et faciliter
+          la réalisation de vos projets. Intervention dans toute la France.
+        </p>
+      </div>
+
+      <div>
+        <h4>Le site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="domaines-activite.html">Domaines d'activité</a></li>
+          <li><a href="savoir-faire.html">Savoir-faire</a></li>
+          <li><a href="references.html">Références</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Domaines</h4>
+        <ul class="footer-links">
+          <li><a href="domaines-activite.html#topographie">Topographie</a></li>
+          <li><a href="domaines-activite.html#batiment">Bâtiment et patrimoine</a></li>
+          <li><a href="domaines-activite.html#travaux-publics">Travaux publics</a></li>
+          <li><a href="domaines-activite.html#vrd">VRD et réseaux</a></li>
+          <li><a href="domaines-activite.html#controle">Contrôle de chantier</a></li>
+          <li><a href="domaines-activite.html#geomatique">Géomatique</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            <a href="tel:+33748337041">07 48 33 70 41</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+            <a href="mailto:geoaxe2@gmail.com">geoaxe2@gmail.com</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>
+            <span>Sevran (93) — Seine-Saint-Denis<br>Intervention dans toute la France</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+            <span>Réponse sous 24&nbsp;h ouvrées</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> GéoAxe — SIRET 130 058 670 00014 — APE 7112A</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="contact.html">Demander un devis</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

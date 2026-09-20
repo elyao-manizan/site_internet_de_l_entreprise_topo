@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GéoAxe — Domaines d'activité | Topographie, bâtiment, TP, VRD, contrôle, SIG</title>
+  <meta name="description" content="Les six domaines d'intervention de GéoAxe : topographie, bâtiment et patrimoine, travaux publics et infrastructures, VRD et réseaux, contrôle de chantier et industrie, géomatique.">
+  <meta name="author" content="GéoAxe">
+  <meta name="theme-color" content="#0a1e36">
+
+  <!-- Partage sur les réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GéoAxe">
+  <meta property="og:title" content="GéoAxe — Domaines d'activité | Topographie, bâtiment, TP, VRD, contrôle, SIG">
+  <meta property="og:description" content="Les six domaines d'intervention de GéoAxe : topographie, bâtiment et patrimoine, travaux publics et infrastructures, VRD et réseaux, contrôle de chantier et industrie, géomatique.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:locale" content="fr_FR">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/icons.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<!-- ============ BARRE DE CONTACT ============ -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg> Intervention dans toute la France</span>
+    <ul class="topbar-list">
+      <li><a href="tel:+33748337041"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> 07 48 33 70 41</a></li>
+      <li><a href="mailto:geoaxe2@gmail.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg> geoaxe2@gmail.com</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ EN-TÊTE ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="GéoAxe — accueil">
+      <!-- Déposez votre logo dans assets/images/logo-geoaxe.png (ou .svg).
+           Tant que le fichier n'existe pas, le logo vectoriel de secours s'affiche. -->
+      <img class="logo-img" src="assets/images/logo-geoaxe.png" alt="GéoAxe" width="303" height="156">
+      <span class="logo-baseline">Géomètre-topographe</span>
+      <span class="logo-fallback">
+        <svg class="logo-mark" aria-hidden="true"><use href="#icon-logo"></use></svg>
+        <span class="logo-text">
+          <span class="logo-name">Géo<span>Axe</span></span>
+          <span class="logo-title">Géomètre-topographe</span>
+        </span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="domaines-activite.html" aria-current="page">Domaines d'activité</a>
+        <a href="savoir-faire.html">Savoir-faire</a>
+        <a href="references.html">Références</a>
+        <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ BANDEAU DE PAGE ============ -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <span aria-hidden="true">›</span>
+      <span>Domaines d'activité</span>
+    </nav>
+    <h1>Domaines d'activité</h1>
+    <p class="lead">Six secteurs, une même exigence : une mesure juste, contrôlée et livrée dans un format directement exploitable. Choisissez le domaine qui correspond à votre projet.</p>
+    
+  </div>
+</section>
+
+<!-- ============ LES SIX DOMAINES ============ -->
+<section class="section">
+  <div class="container domains-layout">
+
+    <nav class="domains-nav" aria-label="Sommaire des domaines">
+      <p>Sommaire</p>
+        <a href="#topographie"><svg class="icon" aria-hidden="true"><use href="#icon-topo"></use></svg> Topographie</a>
+        <a href="#batiment"><svg class="icon" aria-hidden="true"><use href="#icon-building"></use></svg> Bâtiment</a>
+        <a href="#travaux-publics"><svg class="icon" aria-hidden="true"><use href="#icon-infra"></use></svg> Travaux publics</a>
+        <a href="#vrd"><svg class="icon" aria-hidden="true"><use href="#icon-vrd"></use></svg> VRD</a>
+        <a href="#controle"><svg class="icon" aria-hidden="true"><use href="#icon-control"></use></svg> Contrôle de chantier</a>
+        <a href="#geomatique"><svg class="icon" aria-hidden="true"><use href="#icon-gis"></use></svg> Géomatique</a>
+    </nav>
+
+    <div>
+
+      <!-- ---------- 1. Topographie ---------- -->
+      <article class="domain-block reveal" id="topographie">
+        <div class="domain-block-head">
+          <div class="icon-wrap">
+            <svg class="icon" aria-hidden="true"><use href="#icon-topo"></use></svg>
+          </div>
+          <div>
+            <span class="domain-number">DOMAINE 01</span>
+            <h2>Topographie</h2>
+          </div>
+        </div>
+
+        <p class="domain-question">Comment mesurer avec précision un terrain pour sécuriser les décisions techniques et opérationnelles&nbsp;?</p>
+
+        <div class="domain-body">
+          <div>
+            <p class="lead">Le levé topographique est la base de tout projet d'aménagement. Il fixe la géométrie réelle du site, à laquelle se compareront ensuite le projet, l'exécution et le récolement.</p>
+            <h3 style="margin-top:28px">Prestations proposées</h3>
+            <ul class="check-list">
+            <li>Levés planimétriques et altimétriques.</li>
+            <li>Création de plans topographiques et de modèles numériques de terrain.</li>
+            <li>Implantation de repères et de points de contrôle.</li>
+            <li>Profils en long, profils en travers et calculs de surfaces.</li>
+            <li>Contrôle des coordonnées, altitudes et tolérances.</li>
+            </ul>
+            <p style="margin-top:28px">
+              <a href="contact.html" class="btn btn-primary">Demander un devis — topographie</a>
+            </p>
+          </div>
+          <div>
+            <div class="media media-4x3 ">
+          <img src="assets/images/projet-topographie.jpg" alt="Topographie" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo d'un levé de terrain (station totale ou GNSS) ou extrait d'un plan topographique<br><code>projet-topographie.jpg</code></span>
+        </div>
+            <div style="margin-top:18px">
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Pour qui</h3>
+              <p>Bureaux d'études, maîtres d'œuvre, aménageurs, collectivités, particuliers porteurs de projet.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Livrables</h3>
+              <p>Plan topographique DWG/DXF et PDF, semis de points, MNT, profils, note de rattachement.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ---------- 2. Bâtiment et patrimoine ---------- -->
+      <article class="domain-block reveal" id="batiment">
+        <div class="domain-block-head">
+          <div class="icon-wrap">
+            <svg class="icon" aria-hidden="true"><use href="#icon-building"></use></svg>
+          </div>
+          <div>
+            <span class="domain-number">DOMAINE 02</span>
+            <h2>Bâtiment et patrimoine</h2>
+          </div>
+        </div>
+
+        <p class="domain-question">Comment mieux connaître, gérer et valoriser durablement votre patrimoine immobilier&nbsp;?</p>
+
+        <div class="domain-body">
+          <div>
+            <p class="lead">Avant toute rénovation, extension ou démolition, un relevé fiable de l'existant évite les mauvaises surprises en phase travaux et sécurise les études.</p>
+            <h3 style="margin-top:28px">Prestations proposées</h3>
+            <ul class="check-list">
+            <li>Relevés d'intérieur, de façades et de toitures.</li>
+            <li>Plans d'état des lieux, coupes et élévations.</li>
+            <li>Relevés avant rénovation, extension ou démolition.</li>
+            <li>Modélisation 3D et production de données utiles au BIM.</li>
+            <li>Contrôle géométrique des ouvrages existants.</li>
+            </ul>
+            <p style="margin-top:28px">
+              <a href="contact.html" class="btn btn-primary">Demander un devis — bâtiment</a>
+            </p>
+          </div>
+          <div>
+            <div class="media media-4x3 ">
+          <img src="assets/images/projet-batiment.jpg" alt="Bâtiment et patrimoine" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo d'une façade relevée, d'un intérieur scanné ou visuel d'un nuage de points<br><code>projet-batiment.jpg</code></span>
+        </div>
+            <div style="margin-top:18px">
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Pour qui</h3>
+              <p>Architectes, bureaux d'études, bailleurs, syndics, entreprises générales, propriétaires.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Livrables</h3>
+              <p>Plans d'étage, coupes et façades DWG/PDF, nuage de points (E57/RCP), maquette 3D.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ---------- 3. Travaux publics et infrastructures ---------- -->
+      <article class="domain-block reveal" id="travaux-publics">
+        <div class="domain-block-head">
+          <div class="icon-wrap">
+            <svg class="icon" aria-hidden="true"><use href="#icon-infra"></use></svg>
+          </div>
+          <div>
+            <span class="domain-number">DOMAINE 03</span>
+            <h2>Travaux publics et infrastructures</h2>
+          </div>
+        </div>
+
+        <p class="domain-question">Comment sécuriser et pérenniser vos projets de travaux publics et d'infrastructures grâce à la donnée géospatiale&nbsp;?</p>
+
+        <div class="domain-body">
+          <div>
+            <p class="lead">Sur un chantier de TP, la topographie conditionne les quantités, les délais et la conformité. Un suivi régulier évite les reprises et fiabilise les situations de travaux.</p>
+            <h3 style="margin-top:28px">Prestations proposées</h3>
+            <ul class="check-list">
+            <li>Relevés d'emprises routières et d'ouvrages.</li>
+            <li>Implantation d'axes, plateformes et ouvrages.</li>
+            <li>Suivi de terrassements et contrôle des pentes.</li>
+            <li>Calcul de déblais, remblais et cubatures.</li>
+            <li>Plans d'exécution et plans de récolement.</li>
+            </ul>
+            <p style="margin-top:28px">
+              <a href="contact.html" class="btn btn-primary">Demander un devis — travaux publics</a>
+            </p>
+          </div>
+          <div>
+            <div class="media media-4x3 ">
+          <img src="assets/images/projet-travaux-publics.jpg" alt="Travaux publics et infrastructures" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo d'un chantier de terrassement, d'une plateforme ou d'un ouvrage d'art<br><code>projet-travaux-publics.jpg</code></span>
+        </div>
+            <div style="margin-top:18px">
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Pour qui</h3>
+              <p>Entreprises de travaux publics, conducteurs de travaux, maîtres d'œuvre, concessionnaires.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Livrables</h3>
+              <p>Plans d'exécution et de récolement, notes de cubature, profils, fichiers guidage machine.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ---------- 4. VRD et réseaux ---------- -->
+      <article class="domain-block reveal" id="vrd">
+        <div class="domain-block-head">
+          <div class="icon-wrap">
+            <svg class="icon" aria-hidden="true"><use href="#icon-vrd"></use></svg>
+          </div>
+          <div>
+            <span class="domain-number">DOMAINE 04</span>
+            <h2>VRD et réseaux</h2>
+          </div>
+        </div>
+
+        <p class="domain-question">Comment connaître précisément vos réseaux et fiabiliser vos travaux d'aménagement&nbsp;?</p>
+
+        <div class="domain-body">
+          <div>
+            <p class="lead">Le récolement géoréférencé des réseaux n'est pas une formalité administrative : c'est la mémoire du chantier, celle qui protégera les interventions futures.</p>
+            <h3 style="margin-top:28px">Prestations proposées</h3>
+            <ul class="check-list">
+            <li>Relevés de voirie, réseaux et équipements existants.</li>
+            <li>Localisation des regards, chambres, coffrets et émergences.</li>
+            <li>Levés de tranchées avant remblaiement.</li>
+            <li>Récolement géoréférencé des réseaux posés.</li>
+            <li>Mise à jour de plans et bases de données techniques.</li>
+            </ul>
+            <p style="margin-top:28px">
+              <a href="contact.html" class="btn btn-primary">Demander un devis — vrd</a>
+            </p>
+          </div>
+          <div>
+            <div class="media media-4x3 ">
+          <img src="assets/images/projet-vrd.jpg" alt="VRD et réseaux" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo d'une tranchée ouverte, d'un réseau en cours de pose ou d'une voirie en travaux<br><code>projet-vrd.jpg</code></span>
+        </div>
+            <div style="margin-top:18px">
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Pour qui</h3>
+              <p>Entreprises de réseaux, aménageurs, lotisseurs, collectivités, exploitants.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Livrables</h3>
+              <p>Plans de récolement conformes aux attentes du maître d'ouvrage, fichiers SIG, classes de précision.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ---------- 5. Contrôle de chantier et industrie ---------- -->
+      <article class="domain-block reveal" id="controle">
+        <div class="domain-block-head">
+          <div class="icon-wrap">
+            <svg class="icon" aria-hidden="true"><use href="#icon-control"></use></svg>
+          </div>
+          <div>
+            <span class="domain-number">DOMAINE 05</span>
+            <h2>Contrôle de chantier et industrie</h2>
+          </div>
+        </div>
+
+        <p class="domain-question">Comment vérifier la conformité géométrique de vos ouvrages et réduire les risques d'erreur sur le chantier&nbsp;?</p>
+
+        <div class="domain-body">
+          <div>
+            <p class="lead">Un écart détecté tôt coûte quelques heures ; le même écart découvert à la réception coûte des semaines. Le contrôle géométrique est un investissement, pas une dépense.</p>
+            <h3 style="margin-top:28px">Prestations proposées</h3>
+            <ul class="check-list">
+            <li>Contrôle d'alignement, de verticalité et de nivellement.</li>
+            <li>Contrôle de planéité des dallages industriels.</li>
+            <li>Vérification des dimensions et positions des ouvrages.</li>
+            <li>Suivi d'ouvrages d'art, structures et équipements industriels.</li>
+            <li>Comparaison entre le projet et l'exécuté.</li>
+            <li>Rapports de contrôle et identification des écarts.</li>
+            </ul>
+            <p style="margin-top:28px">
+              <a href="contact.html" class="btn btn-primary">Demander un devis — contrôle de chantier</a>
+            </p>
+          </div>
+          <div>
+            <div class="media media-4x3 ">
+          <img src="assets/images/projet-controle.jpg" alt="Contrôle de chantier et industrie" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo d'un contrôle de planéité, de verticalité ou d'un ouvrage industriel<br><code>projet-controle.jpg</code></span>
+        </div>
+            <div style="margin-top:18px">
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Pour qui</h3>
+              <p>Entreprises générales, industriels, bureaux de contrôle, maîtres d'ouvrage.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Livrables</h3>
+              <p>Rapport de contrôle daté, cartographie des écarts, comparatif projet / exécuté.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- ---------- 6. Géomatique et données géospatiales ---------- -->
+      <article class="domain-block reveal" id="geomatique">
+        <div class="domain-block-head">
+          <div class="icon-wrap">
+            <svg class="icon" aria-hidden="true"><use href="#icon-gis"></use></svg>
+          </div>
+          <div>
+            <span class="domain-number">DOMAINE 06</span>
+            <h2>Géomatique et données géospatiales</h2>
+          </div>
+        </div>
+
+        <p class="domain-question">Comment transformer vos données géographiques en outils fiables d'analyse et d'aide à la décision&nbsp;?</p>
+
+        <div class="domain-body">
+          <div>
+            <p class="lead">Une donnée mesurée n'a de valeur que si elle est structurée, géoréférencée et lisible par ceux qui doivent décider.</p>
+            <h3 style="margin-top:28px">Prestations proposées</h3>
+            <ul class="check-list">
+            <li>Géoréférencement et structuration de données.</li>
+            <li>Cartographie et production de cartes thématiques.</li>
+            <li>Création et mise à jour de bases de données SIG.</li>
+            <li>Conversion de formats DAO et SIG.</li>
+            <li>Analyse spatiale, modélisation 3D et valorisation des données.</li>
+            </ul>
+            <p style="margin-top:28px">
+              <a href="contact.html" class="btn btn-primary">Demander un devis — géomatique</a>
+            </p>
+          </div>
+          <div>
+            <div class="media media-4x3 ">
+          <img src="assets/images/projet-geomatique.jpg" alt="Géomatique et données géospatiales" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Capture d'écran d'un SIG (QGIS/ArcGIS), d'une carte thématique ou d'un MNT<br><code>projet-geomatique.jpg</code></span>
+        </div>
+            <div style="margin-top:18px">
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Pour qui</h3>
+              <p>Collectivités, gestionnaires de patrimoine, bureaux d'études, exploitants de réseaux.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom:14px">
+              <h3>Livrables</h3>
+              <p>Couches SIG (SHP, GPKG), cartes thématiques, atlas PDF, base de données documentée.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ BANDEAU DEVIS ============ -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Un projet à faire mesurer&nbsp;?</h2>
+        <p>Décrivez-moi votre besoin&nbsp;: vous recevez un devis clair et gratuit sous 24&nbsp;heures, avec le périmètre de mission, les livrables et le délai.</p>
+      </div>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary btn-lg">Demander un devis</a>
+        <a href="tel:+33748337041" class="btn btn-ghost btn-lg">
+          <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> 07 48 33 70 41
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CADRE D'INTERVENTION ============ -->
+<section class="section-sm">
+  <div class="container container-narrow">
+    <div class="notice reveal">
+      <svg class="icon" aria-hidden="true"><use href="#icon-alert"></use></svg>
+      <div>
+        <h3>Cadre d'intervention</h3>
+        <p>
+          Les prestations présentées sur cette page sont des prestations techniques de
+          relevé, de représentation, d'implantation, de contrôle et de récolement.
+          Elles se distinguent des actes fonciers réservés aux professionnels habilités :
+          les opérations qui fixent juridiquement les limites de propriété, comme le
+          bornage, doivent être confiées à un géomètre-expert inscrit à l'Ordre.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-logo">
+        <a href="index.html" class="logo" aria-label="GéoAxe — accueil">
+          <img class="logo-img" src="assets/images/logo-geoaxe-blanc.png" alt="GéoAxe — géomètre-topographe" width="296" height="170">
+          <span class="logo-fallback">
+            <svg class="logo-mark" aria-hidden="true"><use href="#icon-logo"></use></svg>
+            <span class="logo-text">
+              <span class="logo-name">GéoAxe</span>
+              <span class="logo-title">Géomètre-topographe</span>
+            </span>
+          </span>
+        </a>
+        <p class="footer-about">
+          Mesurer avec précision, produire des données fiables et faciliter
+          la réalisation de vos projets. Intervention dans toute la France.
+        </p>
+      </div>
+
+      <div>
+        <h4>Le site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="domaines-activite.html">Domaines d'activité</a></li>
+          <li><a href="savoir-faire.html">Savoir-faire</a></li>
+          <li><a href="references.html">Références</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Domaines</h4>
+        <ul class="footer-links">
+          <li><a href="domaines-activite.html#topographie">Topographie</a></li>
+          <li><a href="domaines-activite.html#batiment">Bâtiment et patrimoine</a></li>
+          <li><a href="domaines-activite.html#travaux-publics">Travaux publics</a></li>
+          <li><a href="domaines-activite.html#vrd">VRD et réseaux</a></li>
+          <li><a href="domaines-activite.html#controle">Contrôle de chantier</a></li>
+          <li><a href="domaines-activite.html#geomatique">Géomatique</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            <a href="tel:+33748337041">07 48 33 70 41</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+            <a href="mailto:geoaxe2@gmail.com">geoaxe2@gmail.com</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>
+            <span>Sevran (93) — Seine-Saint-Denis<br>Intervention dans toute la France</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+            <span>Réponse sous 24&nbsp;h ouvrées</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> GéoAxe — SIRET 130 058 670 00014 — APE 7112A</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="contact.html">Demander un devis</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

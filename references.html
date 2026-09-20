@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GéoAxe — Références | Projets de topographie, implantation et contrôle</title>
+  <meta name="description" content="Les réalisations de GéoAxe : levés topographiques, relevés de bâtiments, implantations, récolement de réseaux, contrôles géométriques et projets SIG. Filtrez par secteur d'activité.">
+  <meta name="author" content="GéoAxe">
+  <meta name="theme-color" content="#0a1e36">
+
+  <!-- Partage sur les réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GéoAxe">
+  <meta property="og:title" content="GéoAxe — Références | Projets de topographie, implantation et contrôle">
+  <meta property="og:description" content="Les réalisations de GéoAxe : levés topographiques, relevés de bâtiments, implantations, récolement de réseaux, contrôles géométriques et projets SIG. Filtrez par secteur d'activité.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:locale" content="fr_FR">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/icons.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<!-- ============ BARRE DE CONTACT ============ -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg> Intervention dans toute la France</span>
+    <ul class="topbar-list">
+      <li><a href="tel:+33748337041"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> 07 48 33 70 41</a></li>
+      <li><a href="mailto:geoaxe2@gmail.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg> geoaxe2@gmail.com</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ EN-TÊTE ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="GéoAxe — accueil">
+      <!-- Déposez votre logo dans assets/images/logo-geoaxe.png (ou .svg).
+           Tant que le fichier n'existe pas, le logo vectoriel de secours s'affiche. -->
+      <img class="logo-img" src="assets/images/logo-geoaxe.png" alt="GéoAxe" width="303" height="156">
+      <span class="logo-baseline">Géomètre-topographe</span>
+      <span class="logo-fallback">
+        <svg class="logo-mark" aria-hidden="true"><use href="#icon-logo"></use></svg>
+        <span class="logo-text">
+          <span class="logo-name">Géo<span>Axe</span></span>
+          <span class="logo-title">Géomètre-topographe</span>
+        </span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="domaines-activite.html">Domaines d'activité</a>
+        <a href="savoir-faire.html">Savoir-faire</a>
+        <a href="references.html" aria-current="page">Références</a>
+        <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ BANDEAU DE PAGE ============ -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <span aria-hidden="true">›</span>
+      <span>Références</span>
+    </nav>
+    <h1>Les références</h1>
+    <p class="lead">Chaque mission est présentée avec son contexte, la méthode employée et les livrables remis. Filtrez par secteur pour trouver un projet proche du vôtre.</p>
+    
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<!--
+  COMMENT AJOUTER UN PROJET
+  1. Dupliquez un bloc <article class="project-card" …> ci-dessous.
+  2. Renseignez data-category avec l'une de ces valeurs :
+     topographie | batiment | travaux-publics | vrd | controle | geomatique
+  3. Remplacez le titre, le texte et les étiquettes.
+  4. Déposez la photo dans assets/images/ et mettez à jour le chemin de l'image.
+  Le filtre et le bouton « Voir plus » fonctionnent automatiquement.
+-->
+<section class="section">
+  <div class="container">
+
+    <div class="filters" role="group" aria-label="Filtrer les projets par secteur">
+      <button class="filter-btn is-active" data-filter="all" aria-pressed="true">Tous les projets</button>
+      <button class="filter-btn" data-filter="topographie" aria-pressed="false">Topographie</button>
+      <button class="filter-btn" data-filter="batiment" aria-pressed="false">Bâtiment</button>
+      <button class="filter-btn" data-filter="travaux-publics" aria-pressed="false">Travaux publics</button>
+      <button class="filter-btn" data-filter="vrd" aria-pressed="false">VRD et réseaux</button>
+      <button class="filter-btn" data-filter="controle" aria-pressed="false">Contrôle</button>
+      <button class="filter-btn" data-filter="geomatique" aria-pressed="false">Géomatique</button>
+    </div>
+
+    <div class="grid grid-3" id="projectGrid">
+      <article class="project-card reveal" data-category="topographie">
+        <div class="media media-16x9 ">
+          <img src="assets/images/projet-01.jpg" alt="Levé topographique — [Ville]" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo ou extrait de livrable pour ce projet<br><code>projet-01.jpg</code></span>
+        </div>
+        <div class="project-body">
+          <div class="post-meta"><span class="badge">Topographie</span><span>[Année]</span></div>
+          <h3>Levé topographique — [Ville]</h3>
+          <p>[Contexte : nature et surface du site, objectif du client, contrainte particulière.]</p>
+          <div class="project-tags"><span>Station totale</span><span>GNSS</span><span>Plan DWG</span></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="travaux-publics">
+        <div class="media media-16x9 ">
+          <img src="assets/images/projet-02.jpg" alt="Implantation de plateforme — [Ville]" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo ou extrait de livrable pour ce projet<br><code>projet-02.jpg</code></span>
+        </div>
+        <div class="project-body">
+          <div class="post-meta"><span class="badge">Travaux publics</span><span>[Année]</span></div>
+          <h3>Implantation de plateforme — [Ville]</h3>
+          <p>[Contexte : type d'ouvrage, tolérances demandées, durée de l'intervention.]</p>
+          <div class="project-tags"><span>Implantation</span><span>Cubatures</span><span>Suivi de chantier</span></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="batiment">
+        <div class="media media-16x9 ">
+          <img src="assets/images/projet-03.jpg" alt="Relevé de façades — [Ville]" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo ou extrait de livrable pour ce projet<br><code>projet-03.jpg</code></span>
+        </div>
+        <div class="project-body">
+          <div class="post-meta"><span class="badge">Bâtiment</span><span>[Année]</span></div>
+          <h3>Relevé de façades — [Ville]</h3>
+          <p>[Contexte : surface relevée, usage du relevé (rénovation, extension, permis).]</p>
+          <div class="project-tags"><span>Scanner 3D</span><span>Élévations</span><span>Nuage de points</span></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="vrd">
+        <div class="media media-16x9 ">
+          <img src="assets/images/projet-04.jpg" alt="Récolement de réseaux — [Ville]" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo ou extrait de livrable pour ce projet<br><code>projet-04.jpg</code></span>
+        </div>
+        <div class="project-body">
+          <div class="post-meta"><span class="badge">VRD et réseaux</span><span>[Année]</span></div>
+          <h3>Récolement de réseaux — [Ville]</h3>
+          <p>[Contexte : linéaire relevé, type de réseaux, classe de précision demandée.]</p>
+          <div class="project-tags"><span>Récolement</span><span>Géoréférencement</span><span>Plan PDF/DWG</span></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="controle">
+        <div class="media media-16x9 ">
+          <img src="assets/images/projet-05.jpg" alt="Contrôle de planéité — [Ville]" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo ou extrait de livrable pour ce projet<br><code>projet-05.jpg</code></span>
+        </div>
+        <div class="project-body">
+          <div class="post-meta"><span class="badge">Contrôle</span><span>[Année]</span></div>
+          <h3>Contrôle de planéité — [Ville]</h3>
+          <p>[Contexte : surface contrôlée, norme ou tolérance de référence, écarts relevés.]</p>
+          <div class="project-tags"><span>Nivellement</span><span>Rapport d'écarts</span><span>Dallage industriel</span></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="geomatique">
+        <div class="media media-16x9 ">
+          <img src="assets/images/projet-06.jpg" alt="Base de données SIG — [Collectivité]" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo ou extrait de livrable pour ce projet<br><code>projet-06.jpg</code></span>
+        </div>
+        <div class="project-body">
+          <div class="post-meta"><span class="badge">Géomatique</span><span>[Année]</span></div>
+          <h3>Base de données SIG — [Collectivité]</h3>
+          <p>[Contexte : données intégrées, nombre d'objets, usage final de la base.]</p>
+          <div class="project-tags"><span>QGIS</span><span>Cartographie</span><span>Base de données</span></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="topographie">
+        <div class="media media-16x9 ">
+          <img src="assets/images/projet-07.jpg" alt="Profils en long et en travers — [Ville]" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo ou extrait de livrable pour ce projet<br><code>projet-07.jpg</code></span>
+        </div>
+        <div class="project-body">
+          <div class="post-meta"><span class="badge">Topographie</span><span>[Année]</span></div>
+          <h3>Profils en long et en travers — [Ville]</h3>
+          <p>[Contexte : linéaire étudié, objectif (voirie, assainissement, terrassement).]</p>
+          <div class="project-tags"><span>Profils</span><span>MNT</span><span>LandXML</span></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="batiment">
+        <div class="media media-16x9 ">
+          <img src="assets/images/projet-08.jpg" alt="Plan d'état des lieux — [Ville]" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo ou extrait de livrable pour ce projet<br><code>projet-08.jpg</code></span>
+        </div>
+        <div class="project-body">
+          <div class="post-meta"><span class="badge">Bâtiment</span><span>[Année]</span></div>
+          <h3>Plan d'état des lieux — [Ville]</h3>
+          <p>[Contexte : type de bâtiment, nombre de niveaux, délai de remise.]</p>
+          <div class="project-tags"><span>Relevé intérieur</span><span>Plans DWG</span><span>Coupes</span></div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="travaux-publics">
+        <div class="media media-16x9 ">
+          <img src="assets/images/projet-09.jpg" alt="Suivi de terrassement — [Ville]" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Photo ou extrait de livrable pour ce projet<br><code>projet-09.jpg</code></span>
+        </div>
+        <div class="project-body">
+          <div class="post-meta"><span class="badge">Travaux publics</span><span>[Année]</span></div>
+          <h3>Suivi de terrassement — [Ville]</h3>
+          <p>[Contexte : volume déplacé, fréquence des relevés, livrables remis.]</p>
+          <div class="project-tags"><span>Drone</span><span>Cubatures</span><span>Suivi mensuel</span></div>
+        </div>
+      </article>
+    </div>
+
+    <p class="empty-state" id="projectEmpty" style="display:none">
+      Aucun projet dans cette catégorie pour le moment.
+      <a href="contact.html">Parlons de votre besoin</a>.
+    </p>
+
+    <div class="load-more-wrap">
+      <button class="btn btn-outline btn-lg" id="loadMore">Voir plus de projets</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ EXEMPLES DE LIVRABLES ============ -->
+<section class="section section-surface">
+  <div class="container">
+    <div class="section-head is-centered">
+      <span class="eyebrow">Livrables</span>
+      <h2>Ce que vous recevez à la fin d'une mission</h2>
+      <p class="lead">
+        Les formats sont convenus avant le démarrage, pour que les fichiers soient
+        directement exploitables par vos équipes.
+      </p>
+    </div>
+    <div class="grid grid-4">
+      <figure class="deliverable reveal">
+        <div class="media media-4x3 ">
+          <img src="assets/images/livrable-plan-topo.jpg" alt="Plan topographique" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Extrait d'un plan de levé finalisé (DWG / PDF)<br><code>livrable-plan-topo.jpg</code></span>
+        </div>
+        <figcaption>Plan topographique<span>Extrait d'un plan de levé finalisé (DWG / PDF)</span></figcaption>
+      </figure>
+      <figure class="deliverable reveal reveal-delay-1">
+        <div class="media media-4x3 ">
+          <img src="assets/images/livrable-profil.jpg" alt="Profil en long et en travers" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Extrait d'un profil produit pour un projet linéaire<br><code>livrable-profil.jpg</code></span>
+        </div>
+        <figcaption>Profil en long et en travers<span>Extrait d'un profil produit pour un projet linéaire</span></figcaption>
+      </figure>
+      <figure class="deliverable reveal reveal-delay-2">
+        <div class="media media-4x3 ">
+          <img src="assets/images/livrable-nuage-points.jpg" alt="Nuage de points 3D" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Capture d'écran d'un nuage de points ou d'une maquette 3D<br><code>livrable-nuage-points.jpg</code></span>
+        </div>
+        <figcaption>Nuage de points 3D<span>Capture d'écran d'un nuage de points ou d'une maquette 3D</span></figcaption>
+      </figure>
+      <figure class="deliverable reveal reveal-delay-3">
+        <div class="media media-4x3 ">
+          <img src="assets/images/livrable-recolement.jpg" alt="Plan de récolement" loading="lazy" decoding="async">
+          <span class="media-hint"><b>Photo à fournir</b>Extrait d'un plan de récolement de réseaux<br><code>livrable-recolement.jpg</code></span>
+        </div>
+        <figcaption>Plan de récolement<span>Extrait d'un plan de récolement de réseaux</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BANDEAU DEVIS ============ -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Un projet à faire mesurer&nbsp;?</h2>
+        <p>Décrivez-moi votre besoin&nbsp;: vous recevez un devis clair et gratuit sous 24&nbsp;heures, avec le périmètre de mission, les livrables et le délai.</p>
+      </div>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary btn-lg">Demander un devis</a>
+        <a href="tel:+33748337041" class="btn btn-ghost btn-lg">
+          <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> 07 48 33 70 41
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-logo">
+        <a href="index.html" class="logo" aria-label="GéoAxe — accueil">
+          <img class="logo-img" src="assets/images/logo-geoaxe-blanc.png" alt="GéoAxe — géomètre-topographe" width="296" height="170">
+          <span class="logo-fallback">
+            <svg class="logo-mark" aria-hidden="true"><use href="#icon-logo"></use></svg>
+            <span class="logo-text">
+              <span class="logo-name">GéoAxe</span>
+              <span class="logo-title">Géomètre-topographe</span>
+            </span>
+          </span>
+        </a>
+        <p class="footer-about">
+          Mesurer avec précision, produire des données fiables et faciliter
+          la réalisation de vos projets. Intervention dans toute la France.
+        </p>
+      </div>
+
+      <div>
+        <h4>Le site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="domaines-activite.html">Domaines d'activité</a></li>
+          <li><a href="savoir-faire.html">Savoir-faire</a></li>
+          <li><a href="references.html">Références</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Domaines</h4>
+        <ul class="footer-links">
+          <li><a href="domaines-activite.html#topographie">Topographie</a></li>
+          <li><a href="domaines-activite.html#batiment">Bâtiment et patrimoine</a></li>
+          <li><a href="domaines-activite.html#travaux-publics">Travaux publics</a></li>
+          <li><a href="domaines-activite.html#vrd">VRD et réseaux</a></li>
+          <li><a href="domaines-activite.html#controle">Contrôle de chantier</a></li>
+          <li><a href="domaines-activite.html#geomatique">Géomatique</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            <a href="tel:+33748337041">07 48 33 70 41</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+            <a href="mailto:geoaxe2@gmail.com">geoaxe2@gmail.com</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>
+            <span>Sevran (93) — Seine-Saint-Denis<br>Intervention dans toute la France</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+            <span>Réponse sous 24&nbsp;h ouvrées</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> GéoAxe — SIRET 130 058 670 00014 — APE 7112A</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="contact.html">Demander un devis</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
