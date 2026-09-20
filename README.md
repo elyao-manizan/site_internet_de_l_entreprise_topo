@@ -11,13 +11,32 @@ Quatre actions, dans l'ordre de priorité :
 
 | # | Action | Où | Temps |
 |---|---|---|---|
-| 1 | Déposer **le logo** au nom `logo-geoaxe.png` | `assets/images/` | 1 min |
-| 2 | Déposer **les photos** (liste complète dans `assets/images/README.md`) | `assets/images/` | variable |
-| 3 | Remplacer **les projets d'exemple** par vos vraies références (voir § 4) | `references.html`, `index.html` | 30 min |
-| 4 | Compléter **les mentions légales** (assurance RC pro, TVA, hébergeur) | `mentions-legales.html` | 5 min |
+| 1 | Déposer **les photos restantes** (liste dans `assets/images/README.md`) | `assets/images/` | variable |
+| 2 | Remplacer **les projets d'exemple** par vos vraies références (voir § 4) | `references.html`, `index.html` | 30 min |
+| 3 | Compléter **les mentions légales** (assurance RC pro, TVA, hébergeur) | `mentions-legales.html` | 5 min |
 
-Le formulaire de contact est déjà relié à Formspree, et l'adresse du siège
-(Sevran, 93) est renseignée.
+Déjà en place : le logo, la photo d'accueil, l'image de partage, le formulaire
+relié à Formspree et l'adresse du siège (Sevran, 93).
+
+### Le logo
+
+Trois fichiers, générés à partir du logo d'origine :
+
+- `logo-geoaxe.png` — version compacte (sans la ligne « géomètre-topographe »),
+  utilisée dans le bandeau haut, où ce texte serait illisible. Le métier est
+  écrit à côté en HTML.
+- `logo-geoaxe-blanc.png` — logo complet en blanc, pour le pied de page sombre.
+- `assets/favicon.svg` — icône de l'onglet du navigateur.
+
+Pour changer le logo, remplacez ces fichiers en conservant les mêmes noms et
+un fond transparent.
+
+### Poids des images
+
+Toute image déposée doit rester **sous 300 Ko**, sinon le site devient lent sur
+mobile. Compressez sur <https://squoosh.app> (format JPEG, qualité 75-80) avant
+de l'envoyer. Pour référence : la photo d'accueil est passée de 918 Ko à 235 Ko
+sans perte visible.
 
 > Le site fonctionne et reste présentable même si les photos manquent : un cadre
 > sombre indique le nom du fichier attendu. Rien ne casse.

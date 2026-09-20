@@ -53,7 +53,7 @@
   --radius-sm: 8px;
   --radius: 14px;
   --radius-lg: 22px;
-  --header-h: 76px;
+  --header-h: 84px;
 
   /* Ombres */
   --shadow-sm: 0 1px 2px rgba(12, 21, 30, .06), 0 2px 8px rgba(12, 21, 30, .05);
@@ -372,10 +372,29 @@ strong { font-weight: 600; color: var(--navy-900); }
 .logo-img {
   height: auto;
   width: auto;
-  max-height: 54px;
-  max-width: 230px;
+  max-height: 52px;
+  max-width: 200px;
 }
-@media (max-width: 480px) { .logo-img { max-height: 44px; max-width: 170px; } }
+/* Le métier, en texte à côté du logo : lisible à n'importe quelle taille */
+.logo-baseline {
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+  padding-left: 13px;
+  margin-left: 2px;
+  border-left: 1px solid var(--line);
+  max-width: 7.5em;
+  line-height: 1.25;
+}
+.logo-img + .logo-baseline + .logo-fallback { display: none; }
+.footer-logo .logo-img { max-height: 70px; max-width: 220px; margin-bottom: 4px; }
+.footer-logo .logo-baseline { display: none; }
+@media (max-width: 560px) {
+  .logo-img { max-height: 42px; max-width: 150px; }
+  .logo-baseline { display: none; }
+}
 .logo-img + .logo-fallback { display: none; }
 .logo-fallback { display: inline-flex; align-items: center; gap: 12px; }
 .logo:hover { text-decoration: none; }

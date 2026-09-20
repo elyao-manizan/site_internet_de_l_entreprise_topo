@@ -14,16 +14,22 @@ vous pouvez donc mettre le site en ligne et compléter les photos ensuite.
 
 ---
 
-## 1. Indispensables (à fournir en priorité)
+## 1. Déjà fournies ✅
+
+| Fichier | Où |
+|---|---|
+| `logo-geoaxe.png` | Bandeau haut (version compacte, sans le sous-titre) |
+| `logo-geoaxe-blanc.png` | Pied de page (fond sombre) |
+| `hero-chantier.jpg` | Grande image d'accueil — vue aérienne de carrière |
+| `og-image.jpg` | Aperçu lors d'un partage, recadré depuis la photo d'accueil |
+
+## 2. Prochaine priorité
 
 | Fichier | Où | Format | Ce qu'il faut |
 |---|---|---|---|
-| `logo-geoaxe.png` | En-tête de toutes les pages | PNG fond transparent, hauteur ≥ 200 px | Votre logo GéoAxe |
-| `hero-chantier.jpg` | Grande image d'accueil | 1920 × 1080 | Vue large de chantier, idéalement aérienne ou avec matériel topo visible |
 | `apropos-terrain.jpg` | Accueil, bloc « Mon expertise » | **portrait** 900 × 1200 | Vous en intervention : station totale, GNSS ou tablette |
-| `og-image.jpg` | Aperçu lors d'un partage (LinkedIn, WhatsApp…) | 1200 × 630 | Photo + logo, texte lisible en petit |
 
-## 2. Pages Domaines d'activité et Savoir-faire
+## 3. Pages Domaines d'activité et Savoir-faire
 
 | Fichier | Ce qu'il faut |
 |---|---|
@@ -36,7 +42,7 @@ vous pouvez donc mettre le site en ligne et compléter les photos ensuite.
 | `savoir-faire-acquisition.jpg` | Matériel en action sur le terrain |
 | `savoir-faire-bureau.jpg` | Traitement au bureau : plan en cours, nuage de points, double écran |
 
-## 3. Page Références
+## 4. Page Références
 
 | Fichier | Ce qu'il faut |
 |---|---|
