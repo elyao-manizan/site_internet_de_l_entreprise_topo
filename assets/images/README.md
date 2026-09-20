@@ -8,6 +8,8 @@ vous pouvez donc mettre le site en ligne et compléter les photos ensuite.
 ## Format conseillé
 
 - **JPG** pour les photos, **PNG** pour le logo et les captures d'écran.
+- ⚠️ L'extension doit être **`.jpg`**, pas `.jpeg` : le nom du fichier doit
+  correspondre exactement, sinon l'image ne s'affiche pas.
 - Largeur maximale **1600 px** et poids **< 300 Ko** par image
   (compressez sur <https://squoosh.app> ou <https://tinypng.com>).
 - Photos **en paysage** sauf mention contraire.
@@ -22,12 +24,15 @@ vous pouvez donc mettre le site en ligne et compléter les photos ensuite.
 | `logo-geoaxe-blanc.png` | Pied de page (fond sombre) |
 | `hero-chantier.jpg` | Grande image d'accueil — vue aérienne de carrière |
 | `og-image.jpg` | Aperçu lors d'un partage, recadré depuis la photo d'accueil |
+| `apropos-terrain.jpg` | Accueil, bloc « Mon expertise » — vous avec la station totale |
+| `savoir-faire-acquisition.jpg` | Accueil, bloc « Savoir-faire » — les deux stations sur trépied |
 
 ## 2. Prochaine priorité
 
-| Fichier | Où | Format | Ce qu'il faut |
-|---|---|---|---|
-| `apropos-terrain.jpg` | Accueil, bloc « Mon expertise » | **portrait** 900 × 1200 | Vous en intervention : station totale, GNSS ou tablette |
+| Fichier | Où | Ce qu'il faut |
+|---|---|---|
+| `projet-01.jpg` à `projet-03.jpg` | Aperçu des références sur l'accueil | Une photo par projet présenté |
+| `savoir-faire-bureau.jpg` | Page Savoir-faire | Traitement au bureau : plan en cours, nuage de points, double écran |
 
 ## 3. Pages Domaines d'activité et Savoir-faire
 
