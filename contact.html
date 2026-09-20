@@ -98,17 +98,17 @@
       </p>
 
       <!--
-        FORMULAIRE — À CONFIGURER EN 2 MINUTES
-        1. Créez un compte gratuit sur https://formspree.io
-        2. Créez un formulaire, copiez son identifiant (ex. mbldqwer)
-        3. Remplacez VOTRE_ID ci-dessous par cet identifiant.
-        Tant que VOTRE_ID est présent, le formulaire ouvre automatiquement
-        le logiciel de messagerie du visiteur (solution de secours).
+        Formulaire relié à Formspree (compte geoaxe2@gmail.com).
+        L'envoi se fait en arrière-plan : le visiteur reste sur la page et
+        voit un message de confirmation. Voir js/script.js § 8.
       -->
-      <form action="https://formspree.io/f/VOTRE_ID" method="POST"
+      <form action="https://formspree.io/f/mgavaoba" method="POST"
             data-contact-form data-fallback-email="geoaxe2@gmail.com" novalidate>
 
         <div class="form-status" role="status" aria-live="polite"></div>
+
+        <!-- Objet de l'e-mail reçu -->
+        <input type="hidden" name="_subject" value="Demande de devis — site GéoAxe">
 
         <div class="form-grid">
           <div class="field">
@@ -224,7 +224,8 @@
           <div>
             <h3>Entreprise</h3>
             <p>GéoAxe — entrepreneur individuel</p>
-            <p style="font-size:.86rem;margin-top:4px">SIRET 130 058 670 00014 — APE 7112A</p>
+            <p style="font-size:.86rem;margin-top:4px">Sevran (93) — Seine-Saint-Denis</p>
+            <p style="font-size:.86rem">SIRET 130 058 670 00014 — APE 7112A</p>
           </div>
         </div>
       </div>
@@ -312,8 +313,8 @@
 </section>
 
 <!-- ============ NEWSLETTER ============ -->
-<!-- Même principe que le formulaire de contact : remplacez VOTRE_ID_NEWSLETTER
-     par l'identifiant d'un second formulaire Formspree. -->
+<!-- Même endpoint Formspree que le formulaire de contact : le champ caché
+     _subject permet de distinguer les deux types de messages dans la boîte mail. -->
 <section class="section-sm">
   <div class="container container-narrow">
     <div class="form-card reveal" style="text-align:center">
@@ -323,9 +324,10 @@
         Quelques e-mails par an : nouvelles prestations, retours de chantier et
         rappels réglementaires utiles. Désinscription en un clic.
       </p>
-      <form action="https://formspree.io/f/VOTRE_ID_NEWSLETTER" method="POST"
+      <form action="https://formspree.io/f/mgavaoba" method="POST"
             data-contact-form data-fallback-email="geoaxe2@gmail.com" class="newsletter-form" novalidate>
         <div class="form-status" role="status" aria-live="polite" style="flex:1 1 100%"></div>
+        <input type="hidden" name="_subject" value="Inscription newsletter — site GéoAxe">
         <label class="visually-hidden" for="news-email">Votre adresse e-mail</label>
         <input type="email" id="news-email" name="E-mail" placeholder="votre@email.fr" required>
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"
@@ -393,7 +395,7 @@
           </li>
           <li>
             <svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>
-            <span>France métropolitaine<br>Déplacement selon le projet</span>
+            <span>Sevran (93) — Seine-Saint-Denis<br>Intervention dans toute la France</span>
           </li>
           <li>
             <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>

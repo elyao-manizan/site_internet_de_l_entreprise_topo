@@ -369,7 +369,13 @@ strong { font-weight: 600; color: var(--navy-900); }
 
 /* Logo */
 .logo { display: inline-flex; align-items: center; gap: 12px; }
-.logo-img { height: 46px; width: auto; }
+.logo-img {
+  height: auto;
+  width: auto;
+  max-height: 54px;
+  max-width: 230px;
+}
+@media (max-width: 480px) { .logo-img { max-height: 44px; max-width: 170px; } }
 .logo-img + .logo-fallback { display: none; }
 .logo-fallback { display: inline-flex; align-items: center; gap: 12px; }
 .logo:hover { text-decoration: none; }

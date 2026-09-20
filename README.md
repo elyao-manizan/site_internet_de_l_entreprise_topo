@@ -12,10 +12,12 @@ Quatre actions, dans l'ordre de priorité :
 | # | Action | Où | Temps |
 |---|---|---|---|
 | 1 | Déposer **le logo** au nom `logo-geoaxe.png` | `assets/images/` | 1 min |
-| 2 | Activer **le formulaire de contact** (voir § 3) | `contact.html` | 2 min |
-| 3 | Déposer **les photos** (liste complète dans `assets/images/README.md`) | `assets/images/` | variable |
-| 4 | Remplacer **les projets d'exemple** par vos vraies références (voir § 4) | `references.html`, `index.html` | 30 min |
-| 5 | Compléter **les mentions légales** (adresse, assurance, hébergeur) | `mentions-legales.html` | 5 min |
+| 2 | Déposer **les photos** (liste complète dans `assets/images/README.md`) | `assets/images/` | variable |
+| 3 | Remplacer **les projets d'exemple** par vos vraies références (voir § 4) | `references.html`, `index.html` | 30 min |
+| 4 | Compléter **les mentions légales** (assurance RC pro, TVA, hébergeur) | `mentions-legales.html` | 5 min |
+
+Le formulaire de contact est déjà relié à Formspree, et l'adresse du siège
+(Sevran, 93) est renseignée.
 
 > Le site fonctionne et reste présentable même si les photos manquent : un cadre
 > sombre indique le nom du fichier attendu. Rien ne casse.
@@ -48,34 +50,40 @@ un lien de menu, pensez à le faire dans les 7 fichiers HTML.
 
 ---
 
-## 3. Activer le formulaire de contact (2 minutes)
+## 3. Le formulaire de contact
 
-Aujourd'hui, si le formulaire n'est pas configuré, il ouvre le logiciel de
-messagerie du visiteur avec le message pré-rempli. C'est une solution de
-secours : beaucoup de visiteurs abandonnent à cette étape, surtout sur mobile.
+Le formulaire de devis et le formulaire newsletter envoient tous les deux vers
+l'endpoint Formspree `https://formspree.io/f/mgavaoba`
+(compte `geoaxe2@gmail.com`). Les deux se distinguent dans la boîte mail grâce
+au champ caché `_subject` :
 
-Pour recevoir les demandes directement par e-mail :
+- « Demande de devis — site GéoAxe »
+- « Inscription newsletter — site GéoAxe »
 
-1. Créez un compte gratuit sur <https://formspree.io> (50 messages/mois inclus).
-2. Créez un formulaire, indiquez `geoaxe2@gmail.com` comme adresse de réception.
-3. Copiez l'identifiant du formulaire (de la forme `mbldqwer`).
-4. Dans `contact.html`, remplacez `VOTRE_ID` :
+### Comment ça marche
 
-   ```html
-   <form action="https://formspree.io/f/VOTRE_ID" ...>
-   ```
+L'envoi se fait en arrière-plan (AJAX, `js/script.js` § 8) : le visiteur reste
+sur la page et voit un message de confirmation. Aucune bibliothèque externe
+n'est chargée — c'est un simple `fetch()`, ce qui garde le site léger.
 
-   devient par exemple :
+Le code gère déjà : la validation des champs, le bouton désactivé pendant
+l'envoi, les messages de succès et d'erreur, et un champ piège anti-robots
+(`_gotcha`).
 
-   ```html
-   <form action="https://formspree.io/f/mbldqwer" ...>
-   ```
+### Après la mise en ligne
 
-5. Faites de même pour la newsletter avec `VOTRE_ID_NEWSLETTER`
-   (créez un second formulaire Formspree, ou supprimez le bloc newsletter).
+1. Faites un envoi de test depuis le site en ligne.
+2. Formspree envoie un e-mail de confirmation à `geoaxe2@gmail.com` lors du
+   tout premier message : **il faut cliquer sur le lien de confirmation**,
+   sinon les messages suivants ne sont pas transmis.
+3. Le plan gratuit accepte 50 messages par mois. Au-delà, Formspree prévient
+   par e-mail.
 
-Validez ensuite un envoi de test : le premier message reçu doit être confirmé
-depuis votre boîte mail.
+### Changer l'adresse de réception
+
+Elle se règle dans le tableau de bord Formspree, pas dans le code.
+Pour changer d'endpoint, remplacez `mgavaoba` aux deux endroits de
+`contact.html`.
 
 ---
 
@@ -140,6 +148,7 @@ Dans les deux cas, pensez ensuite à :
 - remplacer `https://www.geoaxe.fr` par l'adresse réelle dans `robots.txt` et
   `sitemap.xml` ;
 - compléter le nom de l'hébergeur dans `mentions-legales.html` ;
+- confirmer le premier message Formspree reçu (voir § 3) ;
 - déclarer le site dans la Search Console de Google.
 
 ---
@@ -160,3 +169,5 @@ Domaines d'activité, la page Contact et les mentions légales : ne la retirez p
 - SIREN 130 058 670 — SIRET 130 058 670 00014
 - Code APE 7112A — Activité des géomètres
 - Immatriculation au RNE : 15/09/2026 — début d'activité : 14/09/2026
+- Siège : Sevran (93), Seine-Saint-Denis
+- Contact : geoaxe2@gmail.com — 07 48 33 70 41
