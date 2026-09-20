@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Remplacez l'adresse ci-dessous par celle de votre site une fois en ligne.
+Sitemap: https://www.geoaxe.fr/sitemap.xml
