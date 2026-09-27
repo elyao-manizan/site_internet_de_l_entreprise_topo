@@ -12,7 +12,7 @@ Quatre actions, dans l'ordre de priorité :
 | # | Action | Où | Temps |
 |---|---|---|---|
 | 1 | Déposer **les photos restantes** (liste dans `assets/images/README.md`) | `assets/images/` | variable |
-| 2 | Remplacer **les projets d'exemple** par vos vraies références (voir § 4) | `references.html`, `index.html` | 30 min |
+| 2 | Ajouter de nouvelles missions (voir § 4) | `experiences.html` | 30 min |
 | 3 | Compléter **les mentions légales** (assurance RC pro, TVA, hébergeur) | `mentions-legales.html` | 5 min |
 
 Déjà en place : le logo, la photo d'accueil, l'image de partage, le formulaire
@@ -50,7 +50,7 @@ sans perte visible.
 ├── index.html                # Accueil
 ├── domaines-activite.html    # Les 6 domaines, avec sommaire latéral
 ├── savoir-faire.html         # Les 4 familles de compétences (accordéons)
-├── references.html           # Portfolio filtrable + exemples de livrables
+├── experiences.html          # Missions réalisées (expériences terrain)
 ├── contact.html              # Formulaire, coordonnées, FAQ, newsletter
 ├── mentions-legales.html
 ├── confidentialite.html      # Politique de confidentialité (RGPD)
@@ -104,20 +104,20 @@ appartenir au domaine geoaxe.fr pour qu'OVH accepte l'envoi).
 
 ---
 
-## 4. Ajouter ou modifier un projet (page Références)
+## 4. Ajouter une mission (page Expériences)
 
-Dans `references.html`, dupliquez un bloc `<article class="project-card">` puis :
+Dans `experiences.html`, chaque mission est une `<section>` complète
+(photo principale, texte, liste matériel / logiciels / livrables, puis
+3 photos en galerie). Pour en ajouter une :
 
-- renseignez `data-category` avec **une seule** de ces valeurs :
-  `topographie`, `batiment`, `travaux-publics`, `vrd`, `controle`, `geomatique` ;
-- remplacez le titre, l'année, la description et les étiquettes ;
-- déposez la photo dans `assets/images/` et corrigez le chemin de l'image.
+- dupliquez une section « MISSION » ;
+- alternez `section` et `section section-surface`, et ajoutez `is-reverse`
+  sur une mission sur deux pour placer la photo de l'autre côté ;
+- déposez les photos dans `assets/images/` (préfixe `exp-`, 1400 px de large
+  maximum) et corrigez les chemins.
 
-Le filtre par secteur et le bouton « Voir plus » se mettent à jour tout seuls
-(6 projets affichés, puis 6 de plus à chaque clic).
-
-Les textes entre crochets — `[Ville]`, `[Contexte : …]`, `[Année]` — sont des
-emplacements à remplacer par vos vraies informations avant publication.
+Les missions réalisées sous GéoAxe pourront ensuite être distinguées des
+expériences antérieures (salarié / indépendant).
 
 ---
 
