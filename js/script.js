@@ -8,7 +8,7 @@
    5. Sommaire actif (page Domaines d'activité)
    6. Filtres du portfolio + bouton « Voir plus »
    7. Emplacements photo : détection des images manquantes
-   8. Formulaire de contact (envoi Formspree)
+   8. Formulaire de contact (envoi via contact.php)
    9. Année automatique dans le pied de page
    ========================================================= */
 (function () {
@@ -231,9 +231,9 @@
 
   /* -------------------------------------------------------
      8. Formulaire de contact
-     Envoi AJAX vers Formspree (voir data-endpoint sur le <form>).
-     Tant que l'identifiant n'est pas renseigné, on bascule
-     automatiquement sur l'ouverture du logiciel de messagerie.
+     Envoi AJAX vers contact.php (attribut action du <form>).
+     Sans action renseignée, on bascule sur l'ouverture
+     du logiciel de messagerie.
      ------------------------------------------------------- */
   $$('form[data-contact-form]').forEach(function (form) {
     var status = $('.form-status', form);
@@ -254,8 +254,8 @@
 
       var data = new FormData(form);
 
-      // Secours : ouverture du logiciel de messagerie si Formspree
-      // n'est pas encore configuré.
+      // Secours : ouverture du logiciel de messagerie si aucun
+      // script d'envoi n'est configuré.
       if (notConfigured) {
         var lines = [];
         data.forEach(function (value, key) {

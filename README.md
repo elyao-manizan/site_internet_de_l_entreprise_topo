@@ -16,7 +16,7 @@ Quatre actions, dans l'ordre de priorité :
 | 3 | Compléter **les mentions légales** (assurance RC pro, TVA, hébergeur) | `mentions-legales.html` | 5 min |
 
 Déjà en place : le logo, la photo d'accueil, l'image de partage, le formulaire
-relié à Formspree et l'adresse du siège (Sevran, 93).
+traité par `contact.php` (OVH) et l'adresse du siège (Sevran, 93).
 
 ### Le logo
 
@@ -72,9 +72,9 @@ un lien de menu, pensez à le faire dans les 7 fichiers HTML.
 ## 3. Le formulaire de contact
 
 Le formulaire de devis et le formulaire newsletter envoient tous les deux vers
-l'endpoint Formspree `https://formspree.io/f/mgavaoba`
-(compte `geoaxe2@gmail.com`). Les deux se distinguent dans la boîte mail grâce
-au champ caché `_subject` :
+le script `contact.php` (à la racine du site), qui utilise la fonction `mail()`
+de l'hébergement OVH pour transmettre le message à `contact@geoaxe.fr`.
+Les deux se distinguent dans la boîte mail grâce au champ caché `_subject` :
 
 - « Demande de devis — site GéoAxe »
 - « Inscription newsletter — site GéoAxe »
@@ -82,27 +82,25 @@ au champ caché `_subject` :
 ### Comment ça marche
 
 L'envoi se fait en arrière-plan (AJAX, `js/script.js` § 8) : le visiteur reste
-sur la page et voit un message de confirmation. Aucune bibliothèque externe
-n'est chargée — c'est un simple `fetch()`, ce qui garde le site léger.
+sur la page et voit un message de confirmation. Le bouton « Répondre » de votre
+messagerie répond directement au visiteur.
 
-Le code gère déjà : la validation des champs, le bouton désactivé pendant
-l'envoi, les messages de succès et d'erreur, et un champ piège anti-robots
-(`_gotcha`).
+`contact.php` gère : la vérification de l'adresse e-mail, la protection contre
+l'injection d'en-têtes, un champ piège anti-robots (`_gotcha`) et une limite de
+5 envois par heure et par adresse IP.
 
 ### Après la mise en ligne
 
 1. Faites un envoi de test depuis le site en ligne.
-2. Formspree envoie un e-mail de confirmation à `geoaxe2@gmail.com` lors du
-   tout premier message : **il faut cliquer sur le lien de confirmation**,
-   sinon les messages suivants ne sont pas transmis.
-3. Le plan gratuit accepte 50 messages par mois. Au-delà, Formspree prévient
-   par e-mail.
+2. Si rien n'arrive, regardez le dossier « Spam » de `contact@geoaxe.fr`.
+
+Le PHP ne fonctionne pas en ouvrant les fichiers en local : le formulaire ne se
+teste que sur le site en ligne.
 
 ### Changer l'adresse de réception
 
-Elle se règle dans le tableau de bord Formspree, pas dans le code.
-Pour changer d'endpoint, remplacez `mgavaoba` aux deux endroits de
-`contact.html`.
+Modifiez la constante `DESTINATAIRE` en haut de `contact.php` (l'adresse doit
+appartenir au domaine geoaxe.fr pour qu'OVH accepte l'envoi).
 
 ---
 
@@ -167,7 +165,7 @@ Dans les deux cas, pensez ensuite à :
 - remplacer `https://www.geoaxe.fr` par l'adresse réelle dans `robots.txt` et
   `sitemap.xml` ;
 - compléter le nom de l'hébergeur dans `mentions-legales.html` ;
-- confirmer le premier message Formspree reçu (voir § 3) ;
+- faire un envoi de test du formulaire (voir § 3) ;
 - déclarer le site dans la Search Console de Google.
 
 ---
