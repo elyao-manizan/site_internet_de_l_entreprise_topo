@@ -262,7 +262,7 @@
           if (key.charAt(0) === '_' || key === 'rgpd') return;
           lines.push(key + ' : ' + value);
         });
-        var mail = form.dataset.fallbackEmail || 'geoaxe2@gmail.com';
+        var mail = form.dataset.fallbackEmail || 'contact@geoaxe.fr';
         window.location.href = 'mailto:' + mail +
           '?subject=' + encodeURIComponent('Demande de devis — site GéoAxe') +
           '&body=' + encodeURIComponent(lines.join('\n'));
@@ -284,7 +284,7 @@
           }
         })
         .catch(function () {
-          show('error', 'L\'envoi a échoué. Écrivez-moi directement à geoaxe2@gmail.com ou appelez le 07 48 33 70 41.');
+          show('error', 'L\'envoi a échoué. Écrivez-moi directement à contact@geoaxe.fr ou appelez le 07 48 33 70 41.');
         })
         .then(function () {
           if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitBtn.dataset.label || 'Envoyer ma demande'; }
