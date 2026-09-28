@@ -1,0 +1,11 @@
+# GéoAxe — configuration du serveur (hébergement OVH)
+# N'activez ce fichier qu'une fois le certificat SSL actif (voir README § 7).
+
+# Redirige http:// et geoaxe.fr vers https://www.geoaxe.fr
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80 [OR]
+RewriteCond %{HTTP_HOST} ^geoaxe\.fr$ [NC]
+RewriteRule ^(.*)$ https://www.geoaxe.fr/$1 [R=301,L]
+
+# Empêche l'affichage du contenu des dossiers
+Options -Indexes
