@@ -1,5 +1,5 @@
 # GéoAxe — configuration du serveur (hébergement OVH)
-# N'activez ce fichier qu'une fois le certificat SSL actif (voir README § 7).
+# Le certificat SSL (HTTPS) doit être actif sur l'hébergement avant d'envoyer ce fichier.
 
 # Redirige http:// et geoaxe.fr vers https://www.geoaxe.fr
 RewriteEngine On
